@@ -1,3 +1,4 @@
+import { Link } from "@reach/router";
 import React from "react";
 import LoginImage from "../../assets/images/login.svg";
 import classes from "../../styles/Login.module.css";
@@ -21,7 +22,7 @@ const Login = () => {
           <TextInput type="password" placeholder="Enter Password" icon="lock" />
           <Button>Login Now</Button>
           <div className="info">
-            Don't have an account? <a href="signup.html">Signup</a> instead.
+            Don't have an account? <Link to="/signup">Signup</Link> instead.
           </div>
         </Form>
       </div>
